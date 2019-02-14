@@ -16,9 +16,18 @@ repositories {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+    
     testCompile 'io.kotlintest:kotlintest-runner-junit5:3.2.1'
-
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.3.2'
+    testRuntimeOnly'org.junit.jupiter:junit-jupiter-engine:5.3.2'
     testCompile "org.spockframework:spock-core:1.2-groovy-2.4"
+
+    testImplementation "com.willowtreeapps.assertk:assertk-jvm:0.13"
+    testImplementation 'org.assertj:assertj-core:3.6.2'
+    testImplementation 'org.hamcrest:hamcrest:2.1'
+    testImplementation 'org.hamcrest:hamcrest-library:2.1'
+    
+    testImplementation "io.mockk:mockk:1.9"
 }
 
 compileKotlin {
